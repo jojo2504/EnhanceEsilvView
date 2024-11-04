@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Class Remover",
-  "version": "3.0",
+  "name": "EnhanceEsilvView",
+  "version": "3.1",
   "description": "Enhance PDF UI in learning.devinci.fr",
   "permissions": [
     "activeTab"
