@@ -1,6 +1,12 @@
-# PDF UI Enhancement Extension
+# EnhanceEsilvView
 
 A browser extension to enhance the PDF viewer interface on learning.devinci.fr by automatically adjusting iframe heights.
+
+### Before fix 
+![image](https://github.com/user-attachments/assets/2eed30cf-a839-4ba8-bfc6-6f89e720c140)
+
+### After fix
+![image](https://github.com/user-attachments/assets/eb4071eb-2c6b-48ab-8583-ddee9c10f05f)
 
 ## Browser Support
 
