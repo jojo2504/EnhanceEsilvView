@@ -1,17 +1,18 @@
 {
-    "manifest_version": 2,
-    "name": "Class Remover",
-    "version": "1.0",
-    "description": "Removes specified classes from matching divs",
-    "permissions": [
-      "activeTab",
-      "https://www.leonard-de-vinci.net/"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["https://www.leonard-de-vinci.net/"],
-        "js": ["content.js"],
-        "run_at": "document_end"
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "Class Remover",
+  "version": "3.0",
+  "description": "Enhance PDF UI in learning.devinci.fr",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://learning.devinci.fr/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
