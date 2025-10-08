@@ -1,21 +1,28 @@
 function removeClassesFromDiv() {
-    // Look for all divs with the data-owner attribute
+    // Adjust the height of the specific calendar div using ID
+    const calendarDiv = document.getElementById('b-calendar-1');
+    if (calendarDiv) {
+        console.log("Found calendar div, setting height to 800px");
+        calendarDiv.style.height = '800px';
+    }
+
+    // Remove specific classes from certain divs
     const divs = document.querySelectorAll('div[data-owner-cmp="b-weekview-1"]');
-    
-    // Go through each div and check if it has the exact classes we want
+
     divs.forEach(div => {
         if (div.className === "b-dayview-day-content b-widget-scroller b-resize-monitored b-vertical-overflow") {
             console.log('Found exact div, removing classes');
             div.removeAttribute('class');
-            div.className = '';
         }
-        if (div.className === "b-timeaxis-container"){
+
+        if (div.className === "b-timeaxis-container") {
             console.log('Found exact div, deleting');
-            div.remove()
+            div.remove();
         }
     });
+
     // Remove footer if it exists
-    const footer = document.querySelector('footer');  // Adjust this selector based on your actual footer structure
+    const footer = document.querySelector('footer');
     if (footer) {
         console.log('Removing footer');
         footer.remove();

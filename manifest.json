@@ -10,7 +10,8 @@
     {
       "matches": [
         "https://learning.devinci.fr/*",
-        "https://www.leonard-de-vinci.net/"
+        "https://www.leonard-de-vinci.net/",
+        "https://my.devinci.fr/"
       ],
       "js": ["content.js"],
       "run_at": "document_end"
